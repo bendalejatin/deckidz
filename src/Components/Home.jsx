@@ -14,6 +14,13 @@ import arpuzzlecover from "./Images/arpuzzle_cover.jpg";
 
 import elephant from "./Images/elephant.png";
 import cat from "./Images/cat.png";
+import lion from "./Images/lion.png";
+
+import {
+  FaApple,
+  FaGooglePlay,
+  FaAmazon
+} from "react-icons/fa";
 
 const images = [home_bg1, home_bg2, home_bg3];
 
@@ -175,35 +182,129 @@ const Home = () => {
       </div>
 
       <div className="cat">
-          <img src={cat} alt="Cat" />
-        </div>
+        <img src={cat} alt="Cat" />
+      </div>
 
       <div className="ar-container">
-      <div className="ar-video-frame2">
-        <iframe
-          className="ar-video"
-          src=""
-          title="AR Video"
-          allowFullScreen
-        ></iframe>
-        <p className="website-link">www.deckidz.com</p>
+        <div className="ar-video-frame2">
+          <iframe
+            className="ar-video"
+            src=""
+            title="AR Video"
+            allowFullScreen
+          ></iframe>
+          <p className="website-link">www.deckidz.com</p>
+        </div>
+        <div className="ar-text">
+          <ul>
+            <li>
+              <strong>Today's educators</strong> understand that interaction and
+              creativity enhance the learning process, and Augmented Reality
+              provides both.
+            </li>
+            <li>
+              AR can transform the classroom into an environment where
+              characters can spring to life from the pages of a textbook.
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="ar-text">
-        <ul>
-          <li>
-            <strong>Today's educators</strong> understand that interaction and
-            creativity enhance the learning process, and Augmented Reality
-            provides both.
-          </li>
-          <li>
-            AR can transform the classroom into an environment where characters
-            can spring to life from the pages of a textbook.
-          </li>
-        </ul>
-      </div>
-    </div>
 
-    <hr></hr>
+      <hr></hr>
+
+      <div className="gifts-container">
+        {/* Heading */}
+        <h2 className="gifts-heading">
+          Our Educational Animal Games Kit can be used as:-
+        </h2>
+
+        {/* Cards Section */}
+        <div className="gifts-grid">
+          <div className="gift-card yellow">
+            <h3>Educational Gifts</h3>
+            <p>
+              Our product is AR-based which is very helpful for the kids to
+              getting real experience of the Object, it creates curiosity, Fun &
+              Learning at the same time.
+            </p>
+          </div>
+
+          <div className="gift-card red">
+            <h3>Unique Birthday Gift</h3>
+            <p>
+              A very unique birthday gift for kids as all the Puzzle Cards are
+              educational, helping develop retention power and general
+              awareness.
+            </p>
+          </div>
+
+          <div className="gift-card blue">
+            <h3>Innovative Gifts For Kids</h3>
+            <p>
+              Augmented reality is very informative and enhances a child's
+              visualization skills, encouraging them to think outside the box.
+            </p>
+          </div>
+
+          <div className="gift-card green">
+            <h3>Best Gift For Children</h3>
+            <p>
+              These Puzzle Cards help develop motor skills, problem-solving,
+              creativity, and thinking abilities—great for kids 3+ years old.
+            </p>
+          </div>
+        </div>
+        <div className="spacer" >
+        </div>
+        <div className="lion-container">
+          <div className="lion">
+            <img src={lion} alt="Make In India" />
+            {/* <span className="text-overlay">Make In India</span> */}
+          </div>
+          <h2 className="footer-text">
+            All Products Available for White Labeling
+          </h2>
+        </div>
+      </div>
+
+      <section className="app-download">
+      <h2 className="heading">Get the Deckidz App</h2>
+      <p className="description">
+        Available on multiple platforms for easy access!
+      </p>
+
+      <div className="buttons">
+        <a
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="download-button app-store"
+        >
+          <FaApple/>
+          <span>App Store</span>
+        </a>
+
+        <a
+          href="https://play.google.com/store/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="download-button google-play"
+        >
+          <FaGooglePlay/>
+          <span>Google Play</span>
+        </a>
+
+        <a
+          href="https://www.amazon.com/appstore"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="download-button amazon"
+        >
+          <FaAmazon/>
+          <span>Amazon Appstore</span>
+        </a>
+      </div>
+    </section>
 
     </div>
   );

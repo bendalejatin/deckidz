@@ -548,3 +548,215 @@ hr {
   background-color: #eec318 ; /* Change color as needed */
   margin: 20px 0;
 }
+
+.gifts-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+.gifts-heading {
+  background: #144a6c;
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 5px solid gold;
+}
+
+.gifts-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  align-items: stretch; /* Makes all boxes equal height */
+}
+
+.gift-card {
+  width: 250px;
+  padding: 20px;
+  border-radius:1px;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Ensures text alignment */
+  justify-content: space-between; /* Spreads content evenly */
+  min-height: 220px; /* Ensures equal height */
+}
+
+.gift-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+  
+.gift-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.gift-card p {
+  font-size: 14px;
+}
+
+.yellow {
+  background: #f4c363;
+}
+
+.red {
+  background: #e95d5d;
+}
+
+.blue {
+  background: #4667a4;
+}
+
+.green {
+  background: #5ab89d;
+}
+
+.spacer {
+  margin-top: 60px;
+}
+
+.Lion-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lion {
+  position: relative;
+  display: inline-block;
+}
+
+.lion img {
+  width: 400px; /* Adjust size */
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b4c63;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #1b4c63;
+}
+
+@media screen and (max-width: 800px){
+  .lion img {
+    width: 300px; /* Adjust size */
+  }
+  .gifts-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gift-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* General Section Styling */
+.app-download {
+  text-align: center;
+  padding: 40px;
+  font-size: 40px;
+}
+
+/* Heading Styling */
+.heading {
+  font-size: 28px;
+  color: #041d7f;
+  font-weight: bold;
+}
+
+/* Description Styling */
+.description {
+  color: #6b7280;
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+/* Button Container */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.buttons span {
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+/* Common Button Styling */
+.download-button {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.download-button .icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+/* Button Hover Effect */
+.download-button:hover {
+  transform: scale(1.05);
+}
+
+/* Platform-Specific Button Styling */
+.app-store {
+  background-color: #000;
+}
+
+.google-play {
+  background-color: #34d399;
+}
+
+.amazon {
+  background-color: #fbbf24;
+}
+
+/* Responsive Styling */
+@media (max-width: 640px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .download-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .download-button .icon {
+    font-size: 18px;
+  }
+}
