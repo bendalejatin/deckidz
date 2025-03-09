@@ -12,6 +12,9 @@ import appstoreimg from "./Images/App_Logo_PlayStore.avif";
 import bear from "./Images/bear_tree.png";
 import arpuzzlecover from "./Images/arpuzzle_cover.jpg";
 
+import elephant from "./Images/elephant.png";
+import cat from "./Images/cat.png";
+
 const images = [home_bg1, home_bg2, home_bg3];
 
 const Home = () => {
@@ -90,15 +93,13 @@ const Home = () => {
         </div>
 
         <div className="section">
-        <div className="ar-image">
+          <div className="ar-image">
             <img src={bear} alt="Bear under tree" />
           </div>
           <h2 className="ar-title">AR Animal Games Function</h2>
         </div>
 
         <div className="ar-content">
-          
-
           <div className="ar-video-container">
             {/* <iframe
               width="560"
@@ -111,34 +112,99 @@ const Home = () => {
               allowfullscreen
             ></iframe> */}
             <div className="video-wrapper">
-      {!showVideo ? (
-        <div className="cover" onClick={handlePlayVideo}>
-          <img
-            src={arpuzzlecover}
-            alt="Video Thumbnail"
-            className="video-thumbnail"
-          />
-          <div className="play-button">▶</div>
-        </div>
-      ) : (
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/RIT0GjT8q8Q?autoplay=1"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      )}
-    </div>
+              {!showVideo ? (
+                <div className="cover" onClick={handlePlayVideo}>
+                  <img
+                    src={arpuzzlecover}
+                    alt="Video Thumbnail"
+                    className="video-thumbnail"
+                  />
+                  <div className="play-button">▶</div>
+                </div>
+              ) : (
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/RIT0GjT8q8Q?autoplay=1"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              )}
+            </div>
           </div>
         </div>
         <div className="details-button">
           <button>Details</button>
         </div>
       </div>
+
+      <hr></hr>
+
+      <div className="elephant">
+        <img src={elephant} alt="Elephant" />
+      </div>
+
+      <div className="ar-container">
+        <div className="ar-text">
+          <ul>
+            <li>
+              <strong>Augmented Reality</strong> has proven to be an effective
+              means of educating and entertaining young people of all ages and
+              grade levels, from toddlers to graduate students.
+            </li>
+            <li>
+              AR Puzzle Cards can be used to teach the Animal Name by digitally
+              displaying an animal whose name & animal match on the Puzzle.
+            </li>
+          </ul>
+        </div>
+        <div className="ar-video-frame1">
+          <div className="ar-video-wrapper">
+            <iframe
+              className="ar-video"
+              src=""
+              title="AR Video"
+              allowFullScreen
+            ></iframe>
+            <p className="website-link">www.deckidz.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="cat">
+          <img src={cat} alt="Cat" />
+        </div>
+
+      <div className="ar-container">
+      <div className="ar-video-frame2">
+        <iframe
+          className="ar-video"
+          src=""
+          title="AR Video"
+          allowFullScreen
+        ></iframe>
+        <p className="website-link">www.deckidz.com</p>
+      </div>
+      <div className="ar-text">
+        <ul>
+          <li>
+            <strong>Today's educators</strong> understand that interaction and
+            creativity enhance the learning process, and Augmented Reality
+            provides both.
+          </li>
+          <li>
+            AR can transform the classroom into an environment where characters
+            can spring to life from the pages of a textbook.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr></hr>
+
     </div>
   );
 };
