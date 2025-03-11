@@ -17,9 +17,7 @@ import cat from "./Images/cat.png";
 import lion from "./Images/lion.png";
 
 import {
-  FaApple,
-  FaGooglePlay,
-  FaAmazon
+  FaGooglePlay
 } from "react-icons/fa";
 
 const images = [home_bg1, home_bg2, home_bg3];
@@ -268,40 +266,21 @@ const Home = () => {
       </div>
 
       <section className="app-download">
-      <h2 className="heading">Get the Deckidz App</h2>
+      <h2 className="heading">Get the App...</h2>
       <p className="description">
-        Available on multiple platforms for easy access!
+        Available on platform for easy access!
       </p>
 
       <div className="buttons">
-        <a
-          href="https://www.apple.com/app-store/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="download-button app-store"
-        >
-          <FaApple/>
-          <span>App Store</span>
-        </a>
 
         <a
-          href="https://play.google.com/store/"
+          href="https://play.google.com/store/apps/details?id=com.DECKidz.AnimalEncyclopediaWithAR"
           target="_blank"
           rel="noopener noreferrer"
           className="download-button google-play"
         >
           <FaGooglePlay/>
           <span>Google Play</span>
-        </a>
-
-        <a
-          href="https://www.amazon.com/appstore"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="download-button amazon"
-        >
-          <FaAmazon/>
-          <span>Amazon Appstore</span>
         </a>
       </div>
     </section>

@@ -63,7 +63,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="icon"
               >
-                <FaLinkedin />
+                <FaLinkedin className="icon" id="link" />
               </a>
               <a
                 href="https://www.instagram.com"

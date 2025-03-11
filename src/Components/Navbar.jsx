@@ -23,9 +23,9 @@ const Navbar = () => {
           <li>
             <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/Products" onClick={() => setIsOpen(false)}>Products</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/AboutUs" onClick={() => setIsOpen(false)}>About Us</Link>
           </li>

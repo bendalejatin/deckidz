@@ -145,14 +145,17 @@ body{
   }
   .icon {
     font-size: 24px;
-    color: #FABC3F;
+    color: #fff;
     transition: color 0.3s ease;
   }
   
   .icon:hover {
-    color: #fff;
+    color: #FABC3F;
   }
-  
+
+  #link{
+    transform: scaleX(1);
+  }
 
   .copywrite{
     padding: 20px 0px;
