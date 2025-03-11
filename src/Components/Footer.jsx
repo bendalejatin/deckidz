@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="copywrite">
-        <p>© 2023 by DEC Gaming Studio Pvt Ltd.®</p>
+        <p>© 2025 by DEC Gaming Studio Pvt Ltd.®</p>
       </div>
     </footer>
   );

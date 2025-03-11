@@ -16,6 +16,12 @@ import elephant from "./Images/elephant.png";
 import cat from "./Images/cat.png";
 import lion from "./Images/lion.png";
 
+import elephantvid from "./Videos/elephant.mp4";
+import monkeyvid from "./Videos/monkey.mp4";
+
+import elephantv from "./Images/elephantvid.png";
+import monkeyv from "./Images/monkeyvid.png";
+
 import {
   FaGooglePlay
 } from "react-icons/fa";
@@ -168,12 +174,35 @@ const Home = () => {
         </div>
         <div className="ar-video-frame1">
           <div className="ar-video-wrapper">
-            <iframe
+            {/* <iframe
               className="ar-video"
               src=""
               title="AR Video"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
+            <div className="video-wrapper">
+              {!showVideo ? (
+                <div className="cover" onClick={handlePlayVideo}>
+                  <img
+                    src={elephantv}
+                    alt="Video Thumbnail"
+                    className="video-thumbnail"
+                  />
+                  <div className="play-button">▶</div>
+                </div>
+              ) : (
+                <iframe
+                  width="560"
+                  height="315"
+                  src={elephantvid}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              )}
+            </div>
             <p className="website-link">www.deckidz.com</p>
           </div>
         </div>
@@ -185,12 +214,35 @@ const Home = () => {
 
       <div className="ar-container">
         <div className="ar-video-frame2">
-          <iframe
+          {/* <iframe
             className="ar-video"
             src=""
             title="AR Video"
             allowFullScreen
-          ></iframe>
+          ></iframe> */}
+          <div className="video-wrapper">
+              {!showVideo ? (
+                <div className="cover" onClick={handlePlayVideo}>
+                  <img
+                    src={monkeyv}
+                    alt="Video Thumbnail"
+                    className="video-thumbnail"
+                  />
+                  <div className="play-button">▶</div>
+                </div>
+              ) : (
+                <iframe
+                  width="560"
+                  height="315"
+                  src={monkeyvid}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              )}
+            </div>
           <p className="website-link">www.deckidz.com</p>
         </div>
         <div className="ar-text">
